@@ -10,6 +10,11 @@ function processItem(item, res = "") {
 }
 
 function printTree(input) {
+  if (!input || !input.name) {
+    console.error("Error: Expected object with 'name' and 'items' properties");
+    return;
+  }
+
   console.log(`${input.name}`);
   processItem(input);
 }
