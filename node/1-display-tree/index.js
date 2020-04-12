@@ -1,10 +1,10 @@
-function processItem(item, res = "") {
+function processItem(item, res = '') {
   if (item.items) {
     item.items.forEach((childItem, i) => {
       const isLast = i === item.items.length - 1;
-      const spaces = new Array(3).join(" ");
-      console.log(res + (isLast ? "└" : "├") + "──" + childItem.name);
-      processItem(childItem, res + (isLast ? " " : "|") + spaces);
+      const spaces = new Array(3).join(' ');
+      console.log(`${res + (isLast ? '└' : '├')}──${childItem.name}`);
+      processItem(childItem, res + (isLast ? ' ' : '|') + spaces);
     });
   }
 }
@@ -20,7 +20,7 @@ function printTree(input) {
 }
 
 const example = {
-  name: "1",
+  name: '1',
   items: [
     {
       name: 2,

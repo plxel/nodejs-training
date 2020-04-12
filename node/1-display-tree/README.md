@@ -9,7 +9,6 @@ To get started:
 To print custom json - pass it as string:
 `npm start "{\"name\":\"test1\",\"items\":[{\"name\":\"child\"}]}"`
 
-
 For example, given this json as input:
 
 ```
