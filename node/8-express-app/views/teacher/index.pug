@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 My Courses
+
+  each course in courses
+    div
+      h4
+        a(href=`/teacher/courses/${course.id}`) #{course.title}
+      div= course.description

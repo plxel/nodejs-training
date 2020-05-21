@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "login": "user1"
+    },
+    {
+      "id": "2",
+      "login": "user2"
+    },
+    {
+      "id": "3",
+      "login": "user3"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "title": "Course 1",
+      "description": "Course 1 description",
+      "authorId": "1",
+      "members": ["2"],
+      "lessons": ["1","2"]
+    },
+    {
+      "id": "2",
+      "title": "Course 2",
+      "description": "Course 2 description",
+      "authorId": "3",
+      "members": [],
+      "lessons": ["3","4"]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "1",
+      "title": "Course 1/Lesson 1 Intro",
+      "description": "Intro",
+      "courseId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Course 1/Lesson 2 Some topic",
+      "description": "some topic description",
+      "courseId": "1"
+    },
+    {
+      "id": "3",
+      "title": "Course 2/Lesson 1 Getting started",
+      "description": "Getting started",
+      "courseId": "2"
+    },
+    {
+      "id": "4",
+      "title": "Course 2/Lesson 2 Continue",
+      "description": "Continue",
+      "courseId": "2"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "content": "comment 1",
+      "authorId": "1",
+      "lessonId": "1"
+    },
+    {
+      "id": "2",
+      "content": "comment 2",
+      "authorId": "1",
+      "lessonId": "1"
+    }
+  ]
+}

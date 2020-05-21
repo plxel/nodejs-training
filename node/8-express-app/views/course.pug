@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  a(href="/courses") All courses
+
+  h1= course.title
+  div= course.description
+
+  each lesson in lessons
+    div
+      h4
+        if hasAccess
+          a(href=`/courses/${course.id}/lessons/${lesson.id}`) #{lesson.title}
+        else
+          span= lesson.title
+      div= lesson.description
