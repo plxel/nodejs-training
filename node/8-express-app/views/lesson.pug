@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  a(href=`/courses/${course.id}`) #{course.title}
+  h1= lesson.title
+  div= lesson.description
+
+
+  h3 Comments
+  each comment in comments
+    div
+      div= comment.content
+      small= comment.authorId
